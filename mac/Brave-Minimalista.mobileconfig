@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Perfil de configuración para macOS: deja el Brave normal "minimalista", como
+  Brave Origin, con las 16 políticas oficiales que Brave Origin fija por defecto
+  (brave-core: browser/brave_origin/brave_origin_service_factory.cc).
+
+  Instalar: doble clic en este archivo y después Ajustes del Sistema >
+  General > Gestión de dispositivos (en versiones antiguas: Privacidad y
+  seguridad > Perfiles) > "Brave minimalista" > Instalar.
+  Quitar: en esa misma pantalla, selecciona el perfil y pulsa "-".
+  Comprobar: abre Brave y escribe brave://policy
+-->
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.ManagedClient.preferences</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>io.github.eduardorv7-cmd.rv7.brave-minimalista.politicas</string>
+            <key>PayloadUUID</key>
+            <string>48C0839F-88D4-4B54-AEF0-F5AD96D77657</string>
+            <key>PayloadDisplayName</key>
+            <string>Políticas de Brave</string>
+            <key>PayloadEnabled</key>
+            <true/>
+            <key>PayloadContent</key>
+            <dict>
+                <key>com.brave.Browser</key>
+                <dict>
+                    <key>Forced</key>
+                    <array>
+                        <dict>
+                            <key>mcx_preference_settings</key>
+                            <dict>
+                                <!-- Brave Rewards y anuncios de Brave -->
+                                <key>BraveRewardsDisabled</key>
+                                <true/>
+                                <!-- Brave Wallet (criptomonedas y dominios Web3) -->
+                                <key>BraveWalletDisabled</key>
+                                <true/>
+                                <!-- Brave VPN -->
+                                <key>BraveVPNDisabled</key>
+                                <true/>
+                                <!-- Leo (asistente de IA) -->
+                                <key>BraveAIChatEnabled</key>
+                                <false/>
+                                <!-- IA local -->
+                                <key>BraveLocalAIEnabled</key>
+                                <false/>
+                                <!-- Brave News -->
+                                <key>BraveNewsDisabled</key>
+                                <true/>
+                                <!-- Brave Talk -->
+                                <key>BraveTalkDisabled</key>
+                                <true/>
+                                <!-- Ventanas privadas con Tor -->
+                                <key>TorDisabled</key>
+                                <true/>
+                                <!-- Speedreader -->
+                                <key>BraveSpeedreaderEnabled</key>
+                                <false/>
+                                <!-- Playlist -->
+                                <key>BravePlaylistEnabled</key>
+                                <false/>
+                                <!-- Wayback Machine -->
+                                <key>BraveWaybackMachineEnabled</key>
+                                <false/>
+                                <!-- Web Discovery Project -->
+                                <key>BraveWebDiscoveryEnabled</key>
+                                <false/>
+                                <!-- Analítica de uso privada (P3A) -->
+                                <key>BraveP3AEnabled</key>
+                                <false/>
+                                <!-- Ping diario de uso -->
+                                <key>BraveStatsPingEnabled</key>
+                                <false/>
+                                <!-- Alias de correo -->
+                                <key>EmailAliasesEnabled</key>
+                                <false/>
+                                <!-- Ajuste automático de privacidad por web (PSST) -->
+                                <key>PsstEnabled</key>
+                                <false/>
+                            </dict>
+                        </dict>
+                    </array>
+                </dict>
+            </dict>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Brave minimalista (como Brave Origin)</string>
+    <key>PayloadDescription</key>
+    <string>Desactiva en Brave: Rewards, Wallet, VPN, Leo, IA local, News, Talk, Tor, Speedreader, Playlist, Wayback Machine, Web Discovery, P3A, ping de uso, alias de correo y PSST. Son las mismas políticas que usa Brave Origin.</string>
+    <key>PayloadIdentifier</key>
+    <string>io.github.eduardorv7-cmd.rv7.brave-minimalista</string>
+    <key>PayloadOrganization</key>
+    <string>RV7</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>A5A3783F-98DF-42FF-AC7B-B0F3DE4594C2</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
